@@ -3,9 +3,8 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- change title and description to your own -->
-      <title>SEO frendly title - the keywords you want to rank for</title>
-      <meta name="description" content="SEO frendly description - the keywords you want to rank for">
+      <title>Alpha Cal - Never Miss a Crypto Launch Again</title>
+      <meta name="description" content="The complete crypto launch calendar with AI-powered insights, sentiment analysis, and premium whitelist access. Track meme coins, IDOs, and utility tokens in one place.">
       <link rel="icon" type="image/x-icon" href="images/favicon.ico">
       <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
       <script src="https://cdn.tailwindcss.com"></script>
@@ -13,506 +12,281 @@
       <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
       <!-- Production version -->
       <script src="https://unpkg.com/lucide@latest"></script>
+      <!-- AOS Animation Library -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   
-  <!-- DISCLAIMER: This template is an exmaple template, feel free to visit hyperUI.com or DaisyUI.com to change specific section by copy pasting the code -->
+  <body data-theme="dark">
+      <!-- Navigation -->
+      <div class="navbar bg-base-100 fixed top-0 left-0 right-0 z-50 shadow-sm">
+          <div class="navbar-start">
+              <img src="images/logo.png" alt="Alpha Cal" class="w-10 h-10 rounded-full">
+              <a href="/" class="btn btn-ghost text-xl font-bold">Alpha Cal</a>
+          </div>
+          <div class="navbar-end">
+              <a href="https://t.me/+osjWuN33SeFmZGI1" class="btn btn-ghost" target="_blank">Telegram</a>
+              <a href="https://t.me/+osjWuN33SeFmZGI1" class="btn btn-primary" target="_blank">Join Beta</a>
+          </div>
+      </div>
+      <!-- Hero Section -->
+      <div class="min-h-screen pt-20 relative overflow-hidden">
+          <div class="hero-content flex-col lg:flex-row gap-8 lg:gap-12 mx-auto max-w-7xl px-2 lg:px-4">
+              <!-- Left Side - Text Content -->
+              <div class="flex-1 lg:max-w-lg lg:pt-8 lg:pl-2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                  <!-- News Banner -->
+                  <div class="flex items-center gap-2 mb-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                      <div class="badge badge-neutral animate-pulse">News</div>
+                      <span class="text-sm font-medium">Alpha Cal joins SE Ranking</span>
+                      <i data-lucide="plus" class="w-4 h-4"></i>
+                  </div>
+                  
+                  <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-left leading-tight" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                      Never miss a <span class="text-primary animate-pulse">crypto launch</span> again
+                  </h1>
+                  <p class="text-lg md:text-xl mb-8 text-base-content/70 text-left" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+                      The complete crypto launch calendar with AI-powered insights, sentiment analysis, and premium whitelist access.
+                  </p>
+                  <div class="flex flex-col sm:flex-row gap-4 mb-8 lg:mb-12" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000">
+                      <a href="https://t.me/+osjWuN33SeFmZGI1" class="btn btn-primary btn-lg hover:scale-105 transition-transform duration-300" target="_blank">Join Beta Telegram</a>
+                  </div>
+              </div>
+              
+              <!-- Right Side - Calendar Interface Mockup with Overflow -->
+              <div class="flex-1 relative lg:min-h-[700px]" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">
+                  <!-- Mobile: Full width image -->
+                  <div class="block lg:hidden">
+                      <img src="images/CalendarWeek.png" alt="Alpha Cal Calendar Interface" class="w-full h-auto object-contain rounded-lg shadow-xl hover:scale-105 transition-transform duration-500">
+                  </div>
+                  
+                  <!-- Desktop: Overflowing image -->
+                  <div class="hidden lg:block absolute left-0 top-16 w-[150%] xl:w-[160%] z-10">
+                      <img src="images/CalendarWeek.png" alt="Alpha Cal Calendar Interface" class="w-full h-auto object-contain hover:scale-105 transition-transform duration-500">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Feature Overview Section -->
+      <div class="py-24 bg-base-100" id="features">
+          <div class="container mx-auto px-6">
+              <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="800">
+                  <h2 class="text-4xl font-bold mb-4">Your complete crypto calendar</h2>
+                  <p class="text-xl text-base-content/70">Track launches, airdrops, updates, and AMAs. Stay ahead with real-time sentiment analysis and be the first to know when market sentiment shifts.</p>
+              </div>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  <!-- Token Launches -->
+                  <div class="card bg-base-100 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                      <div class="card-body">
+                          <h3 class="card-title text-xl mb-4">Token Launches</h3>
+                          <p class="text-base-content/70 mb-6">Never miss a new token launch. Track IDOs, meme coins, and utility tokens across all major chains in real-time.</p>
+                          <div class="space-y-3">
+                              <button class="btn btn-primary w-full hover:scale-105 transition-transform duration-300">
+                                  <i data-lucide="rocket" class="w-4 h-4"></i>
+                                  View Launches
+                              </button>
+                              <button class="btn btn-outline w-full hover:scale-105 transition-transform duration-300">Set Alerts</button>
+                          </div>
+                      </div>
+                  </div>
 
-  <body data-theme="light">
-      <div class="navbar bg-base-100 fixed top-0 left-0 right-0 z-50">
-          <div class="flex-1">
-              <img src="images/logo.png" alt="Lightning Landing Logo" class="w-10 h-10"> <!-- Change your logo here  -->
-              <a href="/" class="btn btn-ghost text-xl">Lightning Landing</a> <!-- Change your company name here  -->
-          </div>
-          <div class="flex-none">
-              <ul class="menu menu-horizontal px-1">
-                  <li><a href="#services">Services</a></li>
-                  <li><a href="#pricing">Pricing</a></li>
-                  <li><a href="#testimonials">Testimonials</a></li>
-              </ul>
-          </div>
-      </div>
-      <div class="hero bg-base-200 min-h-screen">
-          <div class="hero-content flex-col lg:flex-row-reverse">
-              <!-- Use a screenshot/demo/image of your best work that instantly shows value -->
-              <!-- Replace the hero-image.png in the images folder with your own image -->
-              <img src="images/hero-picture.png" class="max-w-sm rounded-lg shadow-2xl lg:max-w-xl" alt="Portfolio showcase of successful client projects" />
-              <div>
-                  <!-- Keep it short, focus on the value you deliver -->
-                  <h1 class="text-5xl font-bold">We Turn Your Ideas Into Successful Products</h1>
-                  <!-- Explain how you deliver on the promise, be specific -->
-                  <p class="py-6">Our team of expert developers and designers craft custom software solutions that help businesses scale and delight their customers.</p>
-                  <div class="flex flex-col items-start">
-                      <!-- Action-oriented CTA that creates urgency -->
-                      <a href="#cta" class="btn btn-primary">Schedule Free Consultation</a>
-                      <!-- Social Proof: Change profile picture of users to your own profile picture and text to your own text-->
-                      <div class="avatar-group -space-x-6 rtl:space-x-reverse mt-3">
-                          <div class="avatar">
-                              <div class="w-12">
-                                  <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-                              </div>
-                          </div>
-                          <div class="avatar">
-                              <div class="w-12">
-                                  <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-                              </div>
-                          </div>
-                          <div class="avatar">
-                              <div class="w-12">
-                                  <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-                              </div>
-                          </div>
-                          <div class="avatar placeholder">
-                              <div class="bg-neutral text-neutral-content w-12">
-                                  <span>+99</span>
+                  <!-- Free Airdrops -->
+                  <div class="card bg-base-100 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                      <div class="card-body">
+                          <h3 class="card-title text-xl mb-4">Free Airdrops</h3>
+                          <p class="text-base-content/70 mb-6">Discover and track free coin airdrops before they happen. Get notified about eligibility requirements and claim deadlines.</p>
+                          <div class="bg-base-200 rounded-lg p-4">
+                              <div class="space-y-2">
+                                  <div class="flex items-center gap-2 text-sm">
+                                      <i data-lucide="gift" class="w-4 h-4 text-success animate-bounce"></i>
+                                      <span>3 New Airdrops Today</span>
+                                  </div>
+                                  <div class="flex items-center gap-2 text-sm">
+                                      <i data-lucide="clock" class="w-4 h-4 text-warning animate-pulse"></i>
+                                      <span>2 Ending Soon</span>
+                                  </div>
                               </div>
                           </div>
                       </div>
-                      <small class="text-gray-500">Trusted by 100+ companies</small>
                   </div>
+
+                  <!-- Project Updates -->
+                  <div class="card bg-base-100 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                      <div class="card-body">
+                          <h3 class="card-title text-xl mb-4">Project Updates</h3>
+                          <p class="text-base-content/70 mb-6">Stay informed about project milestones, partnerships, and development updates from your favorite crypto projects.</p>
+                          <div class="bg-base-200 rounded-lg p-4">
+                              <div class="space-y-2">
+                                  <div class="flex items-center gap-2 text-sm">
+                                      <i data-lucide="trending-up" class="w-4 h-4 text-success"></i>
+                                      <span>Major Partnership Announced</span>
+                                  </div>
+                                  <div class="flex items-center gap-2 text-sm">
+                                      <i data-lucide="code" class="w-4 h-4 text-info"></i>
+                                      <span>New Feature Release</span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- AMA Sessions -->
+                  <div class="card bg-base-100 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                      <div class="card-body">
+                          <h3 class="card-title text-xl mb-4">AMA Sessions</h3>
+                          <p class="text-base-content/70 mb-6">Never miss an Ask Me Anything session. Track upcoming AMAs with project founders and key team members.</p>
+                          <div class="bg-base-200 rounded-lg p-4">
+                              <div class="space-y-2">
+                                  <div class="flex items-center gap-2 text-sm">
+                                      <i data-lucide="users" class="w-4 h-4 text-primary"></i>
+                                      <span>CEO AMA Tomorrow</span>
+                                  </div>
+                                  <div class="flex items-center gap-2 text-sm">
+                                      <i data-lucide="calendar" class="w-4 h-4 text-warning"></i>
+                                      <span>3 AMAs This Week</span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Sentiment Analysis -->
+                  <div class="card bg-base-100 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                      <div class="card-body">
+                          <h3 class="card-title text-xl mb-4">Sentiment Analysis</h3>
+                          <p class="text-base-content/70 mb-6">Analyze current market sentiment around projects. Get real-time insights from social media, forums, and community discussions.</p>
+                          <div class="bg-base-200 rounded-lg p-4">
+                              <div class="space-y-2">
+                                  <div class="text-sm font-semibold">Current Sentiment</div>
+                                  <div class="space-y-1 text-xs">
+                                      <div class="flex items-center gap-2">
+                                          <span>$MEME</span>
+                                          <div class="badge badge-success animate-pulse">85% Bullish</div>
+                                      </div>
+                                      <div class="flex items-center gap-2">
+                                          <span>$PUMP</span>
+                                          <div class="badge badge-warning">60% Neutral</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Sentiment Alerts -->
+                  <div class="card bg-base-100 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                      <div class="card-body">
+                          <h3 class="card-title text-xl mb-4">Sentiment Alerts</h3>
+                          <p class="text-base-content/70 mb-6">Be the first to know when sentiment changes around a project. Get instant notifications for significant sentiment shifts.</p>
+                          <div class="flex items-center justify-between">
+                              <button class="btn btn-circle btn-primary hover:scale-110 transition-transform duration-300">
+                                  <i data-lucide="bell" class="w-4 h-4 animate-pulse"></i>
+                              </button>
+                              <div class="bg-base-200 rounded-lg p-4 w-32 h-20 flex items-center justify-center">
+                                  <div class="w-full h-8 bg-gradient-to-r from-warning/20 to-error/60 rounded animate-pulse"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="text-center mt-12" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
+                  <a href="https://t.me/+osjWuN33SeFmZGI1" class="btn btn-primary btn-lg hover:scale-105 transition-transform duration-300" target="_blank">Join Beta Telegram</a>
               </div>
           </div>
       </div>
-      <!-- The problem we solve -->
-      <div class="p-8 md:p-12 lg:px-16 lg:py-24">
-          <div class="mx-auto max-w-lg text-center">
-              <!-- Change the text to your own text, explain the problem you solve and try to use data to make it more convincing-->
-              <h2 class="text-2xl font-bold md:text-3xl">Most startups spend more than 4000€ on their website</h2>
-              <p class="hidden sm:mt-4 sm:block">2000€ is the average cost of a website in Germany, maintenance costs and hosting is often not included in the price.</p>
-          </div>
-          <div class="mx-auto mt-8 max-w-xl">
-              <img src="images/problem.png" alt="Problem" class="w-full rounded-lg shadow-2xl">
-          </div>
-      </div>
-      <!-- Our Services -->
-      <div class="my-20" id="services">
-          <div class="container mx-auto px-12 bg-base-200 rounded-lg p-12">
-              <h2 class="text-4xl font-bold text-base-content">Why choose us?</h2>
-              <p class="mb-4 mt-2 text-base-content/80">Our customers choose us because we offer a wide range of services to meet their needs at the best price.</p>
-              <!-- Add screenshots of your best work here, make it visually appealing, jsut replace the serviceN.png with your own images -->
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 col-span-1 min-h-[200px] bg-[url('/images/service1.png')] bg-cover bg-center group hover:bg-base-100/90">
-                      <div class="card-body mt-auto bg-base-100/0 opacity-0 group-hover:opacity-100 group-hover:bg-primary rounded-lg transition-all duration-300">
-                          <h2 class="card-title text-base-content">Website designed & developed in less than 10 days</h2>
-                      </div>
-                  </div>
-                  <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 lg:col-span-2 min-h-[200px] bg-[url('/images/service2.png')] bg-cover bg-center group hover:bg-primary">
-                      <div class="card-body mt-auto bg-base-100/0 opacity-0 group-hover:opacity-100 group-hover:bg-primary rounded-lg transition-all duration-300">
-                          <h2 class="card-title text-base-content">Fixed price for all our services, no hidden costs</h2>
-                      </div>
-                  </div>
-                  <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 lg:col-span-2 min-h-[200px] bg-[url('/images/service3.png')] bg-cover bg-center group hover:bg-primary">
-                      <div class="card-body mt-auto bg-base-100/0 opacity-0 group-hover:opacity-100 group-hover:bg-primary rounded-lg transition-all duration-300">
-                          <h2 class="card-title text-base-content">Unlimited revisions until you're 100% satisfied</h2>
-                      </div>
-                  </div>
-                  <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 col-span-1 min-h-[200px] bg-[url('/images/service4.png')] bg-cover bg-center group hover:bg-primary">
-                      <div class="card-body mt-auto bg-base-100/0 opacity-0 group-hover:opacity-100 group-hover:bg-primary rounded-lg transition-all duration-300">
-                          <h2 class="card-title text-base-content">Best price in the market</h2>
-                      </div>
-                  </div>
-              </div>
-              </div>
-          </div>
-      </div>
-      <!-- pricing -->
-      <div class="py-24 sm:py-32" id="pricing">
+
+      <!-- FAQ Section -->
+      <div class="py-24 bg-base-200" id="faq">
           <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto max-w-2xl sm:text-center">
-              <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Affordable website development</h2>
-              <p class="mt-6 text-lg leading-8">Get your professional website built in less than 10 days at a fixed price that's significantly lower than the market average of 4000€.</p>
-            </div>
-            <div class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-              <div class="p-8 sm:p-10 lg:flex-auto">
-                <h3 class="text-2xl font-bold tracking-tight">Complete Website Package</h3>
-                <p class="mt-6 text-base leading-7">Everything you need to get your professional website up and running, with unlimited revisions until you're completely satisfied.</p>
-                <div class="mt-10 flex items-center gap-x-4">
-                  <h4 class="flex-none text-sm font-semibold leading-6">What's included</h4>
-                  <div class="h-px flex-auto"></div>
-                </div>
-                <ul role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 sm:grid-cols-2 sm:gap-6">
-                  <li class="flex gap-x-3">
-                    <i data-lucide="check"></i>
-                    Custom website design
-                  </li>
-                  <li class="flex gap-x-3">
-                    <i data-lucide="check"></i>
-                    Mobile-responsive layout
-                  </li>
-                  <li class="flex gap-x-3">
-                    <i data-lucide="check"></i>
-                    Unlimited revisions
-                  </li>
-                  <li class="flex gap-x-3">
-                    <i data-lucide="check"></i>
-                    10-day delivery
-                  </li>
-                </ul>
+              <div class="mx-auto max-w-2xl sm:text-center" data-aos="fade-up" data-aos-duration="800">
+                  <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Frequently Asked Questions</h2>
+                  <p class="mt-6 text-lg leading-8 text-base-content/70">Everything you need to know about Alpha Cal and how it can help you never miss a crypto launch again.</p>
               </div>
-              <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-                <div class="rounded-2xl py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
-                  <div class="mx-auto max-w-xs px-8">
-                    <p class="text-base font-semibold">Pay once, own it forever</p>
-                    <p class="mt-6 flex items-baseline justify-center gap-x-2">
-                      <span class="text-5xl font-bold tracking-tight">950</span>
-                      <span class="text-sm font-semibold leading-6 tracking-wide">USD</span>
-                    </p>
-                    <a href="#cta" class="btn btn-primary mt-4">Join the waitlist</a>
-                    <p class="mt-6 text-xs leading-5">Invoices and receipts available for easy company reimbursement</p>
+              <div class="mx-auto mt-16 max-w-4xl">
+                  <div class="space-y-8">
+                      <!-- FAQ Item 1 -->
+                      <div class="collapse collapse-plus bg-base-100 hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                          <input type="radio" name="faq-accordion" />
+                          <div class="collapse-title text-xl font-medium">
+                              How does Alpha Cal detect new crypto launches?
+                          </div>
+                          <div class="collapse-content">
+                              <p>Alpha Cal uses advanced AI algorithms to monitor all major platforms including Twitter, Discord, Telegram, and launchpads in real-time. Our system analyzes social sentiment, contract deployments, and community activity to instantly detect and alert you about new launches.</p>
+                          </div>
+                      </div>
+
+                      <!-- FAQ Item 2 -->
+                      <div class="collapse collapse-plus bg-base-100 hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                          <input type="radio" name="faq-accordion" />
+                          <div class="collapse-title text-xl font-medium">
+                              What makes Alpha Cal different from other launch trackers?
+                          </div>
+                          <div class="collapse-content">
+                              <p>Alpha Cal combines AI-powered sentiment analysis, rug risk detection, and premium whitelist access in one platform. We don't just track launches - we analyze them for safety and potential, giving you the insights you need to make informed trading decisions.</p>
+                          </div>
+                      </div>
+
+                      <!-- FAQ Item 3 -->
+                      <div class="collapse collapse-plus bg-base-100 hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                          <input type="radio" name="faq-accordion" />
+                          <div class="collapse-title text-xl font-medium">
+                              How does the $ACAL token work?
+                          </div>
+                          <div class="collapse-content">
+                              <p>The $ACAL token is the utility token that powers the Alpha Cal ecosystem. Holders can stake tokens to unlock premium features, guaranteed whitelist access, priority support, and exclusive trading insights. Higher tiers provide more benefits and early access to high-potential launches.</p>
+                          </div>
+                      </div>
+
+                      <!-- FAQ Item 4 -->
+                      <div class="collapse collapse-plus bg-base-100 hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+                          <input type="radio" name="faq-accordion" />
+                          <div class="collapse-title text-xl font-medium">
+                              Is Alpha Cal safe to use?
+                          </div>
+                          <div class="collapse-content">
+                              <p>Yes, Alpha Cal prioritizes security and safety. We use advanced AI to detect rug pulls and high-risk projects before they become problems. Our platform only connects to verified launchpads and provides detailed risk assessments for every launch we track.</p>
+                          </div>
+                      </div>
+
+                      <!-- FAQ Item 5 -->
+                      <div class="collapse collapse-plus bg-base-100 hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
+                          <input type="radio" name="faq-accordion" />
+                          <div class="collapse-title text-xl font-medium">
+                              Can I use Alpha Cal on mobile?
+                          </div>
+                          <div class="collapse-content">
+                              <p>Absolutely! Alpha Cal is fully responsive and optimized for mobile devices. You can track launches, receive notifications, manage your portfolio, and access whitelist opportunities directly from your mobile device with our intuitive mobile interface.</p>
+                          </div>
+                      </div>
                   </div>
-                </div>
               </div>
-            </div>
           </div>
-        </div>
-        <!-- Testimonials -->
-          <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16" id="testimonials">
-            <h2 class="text-center text-4xl font-bold tracking-tight sm:text-5xl">
-              Read trusted reviews from our customers
-            </h2>
-            <div class="mt-8 [column-fill:_balance] sm:columns-2 sm:gap-6 lg:columns-3 lg:gap-8">
-              <div class="mb-8 sm:break-inside-avoid">
-                <blockquote class="rounded-lg bg-base-200 p-6 shadow-sm sm:p-8">
-                  <div class="flex items-center gap-4">
-                    <img
-                      alt=""
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                      class="size-14 rounded-full object-cover"
-                    />
-                    <div>
-                      <div class="flex justify-center gap-0.5 text-accent">
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                      </div>
-                      <p class="mt-0.5 text-lg font-medium">Paul Starr</p>
-                    </div>
-                  </div>
-                  <p class="mt-4 text-base-200">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
-                    consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
-                    error officiis atque voluptates magnam!
-                  </p>
-                </blockquote>
-              </div>
-              <div class="mb-8 sm:break-inside-avoid">
-                <blockquote class="rounded-lg bg-base-200 p-6 shadow-sm sm:p-8">
-                  <div class="flex items-center gap-4">
-                    <img
-                      alt=""
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                      class="size-14 rounded-full object-cover"
-                    />
-                    <div>
-                      <div class="flex justify-center gap-0.5 text-accent">
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                      </div>
-                      <p class="mt-0.5 text-lg font-medium">Paul Starr</p>
-                    </div>
-                  </div>
-                  <p class="mt-4 text-base-600">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad mollitia rerum quo unde
-                    neque atque molestias quas pariatur! Sint, maxime?
-                  </p>
-                </blockquote>
-              </div>
-              <div class="mb-8 sm:break-inside-avoid">
-                <blockquote class="rounded-lg bg-base-200 p-6 shadow-sm sm:p-8">
-                  <div class="flex items-center gap-4">
-                    <img
-                      alt=""
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                      class="size-14 rounded-full object-cover"
-                    />
-                    <div>
-                      <div class="flex justify-center gap-0.5 text-accent">
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                      </div>
-                      <p class="mt-0.5 text-lg font-medium">Paul Starr</p>
-                    </div>
-                  </div>
-                  <p class="mt-4 text-base-700">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit esse delectus,
-                    maiores fugit, reiciendis culpa inventore sint accusantium libero dolore eos quasi a ex
-                    aliquam molestiae. Tenetur hic delectus maxime.
-                  </p>
-                </blockquote>
-              </div>
-              <div class="mb-8 sm:break-inside-avoid">
-                <blockquote class="rounded-lg bg-base-200 p-6 shadow-sm sm:p-8">
-                  <div class="flex items-center gap-4">
-                    <img
-                      alt=""
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                      class="size-14 rounded-full object-cover"
-                    />
-                    <div>
-                      <div class="flex justify-center gap-0.5 text-accent">
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                      </div>
-                      <p class="mt-0.5 text-lg font-medium">Paul Starr</p>
-                    </div>
-                  </div>
-                  <p class="mt-4 text-base-700">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, fuga?
-                  </p>
-                </blockquote>
-              </div>
-              <div class="mb-8 sm:break-inside-avoid">
-                <blockquote class="rounded-lg bg-base-200 p-6 shadow-sm sm:p-8">
-                  <div class="flex items-center gap-4">
-                    <img
-                      alt=""
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                      class="size-14 rounded-full object-cover"
-                    />
-                    <div>
-                      <div class="flex justify-center gap-0.5 text-accent">
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                      </div>
-                      <p class="mt-0.5 text-lg font-medium">Paul Starr</p>
-                    </div>
-                  </div>
-                  <p class="mt-4 text-base-700">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate officia natus
-                    blanditiis rerum incidunt ex autem repudiandae doloribus eveniet quia? Culpa commodi
-                    quae atque perspiciatis? Provident, magni beatae saepe porro aspernatur facere neque
-                    sunt possimus assumenda perspiciatis aperiam quisquam animi libero voluptatem fuga.
-                    Repudiandae, facere? Nemo reprehenderit quas ratione quis.
-                  </p>
-                </blockquote>
-              </div>
-              <div class="mb-8 sm:break-inside-avoid">
-                <blockquote class="rounded-lg bg-base-200 p-6 shadow-sm sm:p-8">
-                  <div class="flex items-center gap-4">
-                    <img
-                      alt=""
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                      class="size-14 rounded-full object-cover"
-                    />
-                    <div>
-                      <div class="flex justify-center gap-0.5 text-accent">
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                      </div>
-                      <p class="mt-0.5 text-lg font-medium">Paul Starr</p>
-                    </div>
-                  </div>
-                  <p class="mt-4 text-base-700">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, rerum. Nobis laborum
-                    praesentium necessitatibus vero.
-                  </p>
-                </blockquote>
-              </div>
-              <div class="mb-8 sm:break-inside-avoid">
-                <blockquote class="rounded-lg bg-base-200 p-6 shadow-sm sm:p-8">
-                  <div class="flex items-center gap-4">
-                    <img
-                      alt=""
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                      class="size-14 rounded-full object-cover"
-                    />
-                    <div>
-                      <div class="flex justify-center gap-0.5 text-accent">
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                      </div>
-                      <p class="mt-0.5 text-lg font-medium">Paul Starr</p>
-                    </div>
-                  </div>
-                  <p class="mt-4 text-base-700">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quaerat quasi ipsa
-                    repellendus quam! Beatae pariatur quia distinctio fugit repellendus repudiandae nostrum
-                    consectetur quibusdam quo.
-                  </p>
-                </blockquote>
-              </div>
-              <div class="mb-8 sm:break-inside-avoid">
-                <blockquote class="rounded-lg bg-base-200 p-6 shadow-sm sm:p-8">
-                  <div class="flex items-center gap-4">
-                    <img
-                      alt=""
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                      class="size-14 rounded-full object-cover"
-                    />
-                    <div>
-                      <div class="flex justify-center gap-0.5 text-accent">
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                      </div>
-
-                      <p class="mt-0.5 text-lg font-medium">Paul Starr</p>
-                    </div>
-                  </div>
-
-                  <p class="mt-4 text-base-700">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, modi!
-                  </p>
-                </blockquote>
-              </div>
-
-              <div class="mb-8 sm:break-inside-avoid">
-                <blockquote class="rounded-lg bg-base-200 p-6 shadow-sm sm:p-8">
-                  <div class="flex items-center gap-4">
-                    <img
-                      alt=""
-                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                      class="size-14 rounded-full object-cover"
-                    />
-
-                    <div>
-                      <div class="flex justify-center gap-0.5 text-accent">
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                        <i data-lucide="star"></i>
-                      </div>
-                      <p class="mt-0.5 text-lg font-medium">Paul Starr</p>
-                    </div>
-                  </div>
-                  <p class="mt-4 text-base-700">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam numquam, unde molestiae
-                    commodi temporibus dicta.
-                  </p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-      <!-- FAQ -->
-      <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 sm:py-12 lg:px-8 lg:py-16 my-26" id="faq">
-        <div class="grid gap-4 lg:grid-cols-3 lg:gap-8">
-        <div class="h-auto">
-            <h2 class="text-base font-semibold leading-7 text-primary">Common Questions</h2>
-            <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Frequently Asked Questions</p>
-            <p class="mt-6 text-lg leading-8">Everything you need to know about our web development service</p>
-        </div>
-        <div class="h-auto lg:col-span-2">
-          <div class="join join-vertical w-full">
-            <div class="collapse collapse-arrow join-item border-base-300 border">
-                <input type="radio" name="my-accordion-4" checked="checked" />
-                <div class="collapse-title text-xl font-medium">What's included in the website package?</div>
-                <div class="collapse-content">
-                <p>Our complete website package includes everything you need for a professional online presence:</p>
-                <ul class="list-disc pl-6 mt-2">
-                  <li>Custom website design tailored to your brand</li>
-                  <li>Mobile-responsive layout that works on all devices</li>
-                  <li>Unlimited revisions until you're completely satisfied</li>
-                  <li>Fast 10-day delivery timeline</li>
-                  <li>Professional consultation to understand your needs</li>
-                </ul>
-            </div>
-            </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
-                <input type="radio" name="my-accordion-4" />
-                <div class="collapse-title text-xl font-medium">How does the payment process work?</div>
-                <div class="collapse-content">
-                <p>We offer a simple, one-time payment of $950 USD. Once the payment is processed, we'll begin work on your website immediately. You'll receive a professional invoice that can be used for company reimbursement if needed.</p>
-                </div>
-            </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
-                <input type="radio" name="my-accordion-4" />
-                <div class="collapse-title text-xl font-medium">What happens after I join the waitlist?</div>
-                <div class="collapse-content">
-                <p>After joining the waitlist, we'll contact you to schedule an initial consultation. During this call, we'll discuss your website needs, timeline, and answer any questions you might have. Once we agree to proceed, we'll begin the design process immediately.</p>
-                </div>
-            </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
-                <input type="radio" name="my-accordion-4" />
-                <div class="collapse-title text-xl font-medium">What if I need changes after the website is complete?</div>
-                <div class="collapse-content">
-                    <p>We offer unlimited revisions during the development process to ensure you're completely satisfied with your website. After the website is complete, we'll provide clear documentation on how to make basic updates yourself. For major changes, we offer affordable maintenance packages.</p>
-                </div>
-            </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
-                <input type="radio" name="my-accordion-4" />
-                <div class="collapse-title text-xl font-medium">Why is your price lower than the market average?</div>
-                <div class="collapse-content">
-                    <p>We've streamlined our development process and use modern tools that allow us to work efficiently without compromising on quality. This enables us to offer professional websites at a fraction of the typical market price of 4000€, making quality web development accessible to more businesses.</p>           
-                </div>
-            </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
-                <input type="radio" name="my-accordion-4" />
-                <div class="collapse-title text-xl font-medium">Do you provide hosting and domain services?</div>
-                <div class="collapse-content">
-                    <p>Yes! We can help you set up hosting and acquire a domain name for your website. We'll recommend reliable and cost-effective hosting solutions that ensure your website loads quickly and remains secure. We can either manage these services for you or provide guidance if you prefer to handle them yourself.</p>
-                </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-    <!-- final CTA -->
-        <section class="mb-12 lg:mb-24">
-          <div class="mx-auto max-w-7xl px-6 lg:px-8">
-              <div class="lg:flex lg:items-center lg:justify-between w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
-                  <h2 class="text-3xl font-extrabold sm:text-4xl">
-                      <span class="block">
-                          Ready to get your professional website?
-                      </span>
-                      <span class="block">
-                          Join our waitlist today and save 75%.
-                      </span>
-                  </h2>
-                  <div class="lg:mt-0 lg:flex-shrink-0">
-                      <div class=" inline-flex rounded-md shadow mt-8 lg:mt-0">
-                          <a href="#" class="btn btn-primary">Join the waitlist</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
-          <!-- Footer -->
+
+      <!-- Footer -->
       <footer class="footer bg-neutral text-neutral-content p-10">
           <aside>
-              <i data-lucide="hash" class="w-12 h-12git remote remove origin
-              "></i>
-              <p>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
+              <i data-lucide="calendar" class="w-12 h-12"></i>
+              <p>Alpha Cal<br/>Never miss a crypto launch again</p>
           </aside>
           <nav>
               <h6 class="footer-title">Social</h6>
-              <div class="grid grid-flow-col gap-4">
-                  <a>
-                      <i data-lucide="twitter" class="w-6 h-6"></i>
-                  </a>
-                  <a>
-                      <i data-lucide="youtube" class="w-6 h-6"></i>
-                  </a>
-                  <a>
-                      <i data-lucide="facebook" class="w-6 h-6"></i>
-                  </a>
-              </div>
+              <a href="https://t.me/+osjWuN33SeFmZGI1" class="link link-hover">Telegram</a>
           </nav>
       </footer>
-      <script src="https://unpkg.com/lucide@latest"></script>
+
       <script>
-        lucide.createIcons();
+          // Initialize Lucide icons
+          lucide.createIcons();
+          
+          // Initialize AOS animations
+          AOS.init({
+              duration: 800,
+              easing: 'ease-in-out',
+              once: true,
+              offset: 100
+          });
       </script>
   </body>
 </html>
